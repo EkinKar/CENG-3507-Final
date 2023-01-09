@@ -1,0 +1,183 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(240, 240, 240);
+  margin: 0;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.navbar {
+  background-color: rgb(43, 58, 85);
+  padding: 1rem;
+  color: rgb(242, 229, 229);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar img {
+  color: rgb(242, 229, 229);
+  width: 5rem;
+}
+.main-container {
+  display: flex;
+  flex-grow: 1;
+}
+.sidebar {
+  background-color: rgb(43, 58, 85);
+}
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  color: rgb(242, 229, 229);
+  border: 0.5px solid rgb(167, 153, 153);
+  box-sizing: border-box;
+  padding: 1.5rem 1.3rem;
+}
+.sidebar-item:hover {
+  cursor: pointer;
+  background-color: rgb(242, 229, 229);
+  color: rgb(43, 58, 85);
+}
+.main-content {
+  flex-grow: 1;
+}
+.searchbar {
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-flex-wrapper {
+  justify-content: space-between;
+  display: flex;
+  height: 80%;
+}
+.forms-wrapper {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.form {
+  margin: 7% 5%;
+  height: 100%;
+  width: 100%;
+}
+.tables-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 3;
+}
+.table {
+  border-collapse: collapse;
+  margin: 1.7rem 0;
+  font-family: sans-serif;
+  min-width: 300px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  padding: 10%;
+}
+.course-select {
+  text-align: center;
+  padding: 0.2%;
+  margin: 1%;
+  width: 50%;
+}
+.course-details {
+  margin: 2% auto;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+thead tr {
+  background-color: rgb(43, 58, 85);
+  color: #f3f3f3;
+  text-align: left;
+}
+th,
+td {
+  padding: 12px 15px;
+  text-align: center;
+}
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+tbody tr:nth-of-type(odd) {
+  background-color: rgb(233, 228, 224);
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid rgb(43, 58, 85);
+}
+select {
+  border: none;
+  background-color: rgb(240, 240, 240);
+  border-bottom: 1px solid lightgray;
+}
+option {
+  background-color: rgb(240, 240, 240);
+}
+.input {
+  border: none;
+  background-color: rgb(240, 240, 240);
+  border-bottom: 1px solid lightgray;
+  padding: 0.6%;
+  height: 25px;
+  width: 40%;
+  margin: 2%;
+}
+.radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  padding: 1%;
+  margin: 1%;
+}
+
+.icon {
+  width: 20px;
+  text-align: center;
+}
+label {
+  font-size: small;
+}
+.hidden {
+  display: none;
+}
+.button {
+  padding: 0.6%;
+  width: 40%;
+  margin: 2%;
+  color: rgb(247, 247, 247);
+  background-color: rgb(57, 62, 70);
+  border-radius: 6px;
+  min-width: 100px;
+  min-height: 25px;
+}
+.button:hover {
+  background-color: rgb(247, 247, 247);
+  color: rgb(57, 62, 70);
+}
+a {
+  cursor: pointer;
+}
+.footer {
+  background-color: rgb(233, 228, 224);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+}

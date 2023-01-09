@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="navbar">
+        <img src="assets/teacher.png" alt="teacher logo" />
+        <div>Welcome to the Lecture Management System</div>
+      </div>
+      <div class="main-container">
+        <div class="sidebar">
+          <div class="sidebar-item">Home</div>
+          <div class="sidebar-item">Student Management</div>
+          <div class="sidebar-item">Lecture Management</div>
+          <div class="sidebar-item">Timetable</div>
+          <div class="sidebar-item">Calendar</div>
+          <div class="sidebar-item">Settings</div>
+          <div class="sidebar-item">Log Out</div>
+        </div>
+        <div class="main-content">
+          <div class="searchbar">
+            <form id="search-student" action="">
+              <input
+                class="input"
+                id="search-bar"
+                type="number"
+                min="0"
+                placeholder="Student ID"
+              />
+              <input
+                class="button"
+                id="search-button"
+                type="submit"
+                value="Search"
+              />
+            </form>
+          </div>
+          <div class="main-flex-wrapper">
+            <div class="forms-wrapper">
+              <div class="form">
+                <select class="course-select" name="courses" id="courses">
+                  <option value="" id="empty-option">
+                    -- Chose a Course --
+                  </option>
+                </select>
+                <form class="form" id="add-course">
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="Course Name"
+                    id="course-name"
+                  />
+                  <div class="radio">
+                    <label for="base7">Base 7</label>
+                    <input type="radio" name="base" value="7" id="base7" />
+                  </div>
+                  <div class="radio">
+                    <label for="base10">Base 10</label>
+                    <input type="radio" name="base" value="10" id="base10" />
+                  </div>
+                  <input class="button" type="submit" value="Save" />
+                </form>
+              </div>
+              <div class="form">
+                <form class="form" id="add-student">
+                  <input
+                    class="input"
+                    id="ID"
+                    type="number"
+                    name="id"
+                    placeholder="Student ID"
+                  />
+                  <input
+                    class="input"
+                    id="first-name"
+                    type="text"
+                    name="fName"
+                    placeholder="First Name"
+                  />
+                  <input
+                    class="input"
+                    id="surname"
+                    type="text"
+                    name="lName"
+                    placeholder="Last Name"
+                  />
+                  <input
+                    class="input"
+                    id="midterm-score"
+                    type="number"
+                    min="0"
+                    max="100"
+                    name="midterm"
+                    placeholder="Midterm"
+                  />
+                  <input
+                    class="input"
+                    id="final-score"
+                    type="number"
+                    min="0"
+                    max="100"
+                    name="final"
+                    placeholder="Final"
+                  />
+                  <input class="button" type="submit" value="Save" />
+                </form>
+              </div>
+            </div>
+            <div class="tables-wrapper">
+              <table id="student-table" class="table hidden">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Midterm</th>
+                    <th>Final</th>
+                    <th>Mark</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <table id="course-table" class="table hidden">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Course</th>
+                    <th>Midterm</th>
+                    <th>Final</th>
+                    <th>Mark</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <div class="course-details hidden" id="course-details-div">
+                <label for="courses">Course Details</label>
+                <select name="courses" id="course-details">
+                  <option value="all" id="all" selected>Course Details</option>
+                  <option value="failed" id="failed">Failed Students</option>
+                  <option value="passed" id="passed">Passed Students</option>
+                </select>
+              </div>
+              <table id="course-detail" class="table hidden">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Course Name</th>
+                    <th>Students Failed</th>
+                    <th>Students Passed</th>
+                    <th>Average</th>
+                    <th>Base</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <table id="course-student-detail" class="table hidden">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Midterm</th>
+                    <th>Final</th>
+                    <th>Mark</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">Web Development and Programming 2022</div>
+    </div>
+  </body>
+</html>
